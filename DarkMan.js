@@ -25,7 +25,7 @@ const DarkMan = new Discord.Client();
 const prefix = "D!";
 
 
-DarkMan.login("");
+DarkMan.login("ODk4MTQzMzcwMTM5MDI5NTI0.YWf7Mg.IEYGS_h1YtsoVeQr2_PnaTuhZ48");
 DarkMan.on("ready", async () => {
   console.log(`Logged in as ${DarkMan.user.username}!`);
   DarkMan.user.setStatus("ONLINE");
@@ -46,8 +46,8 @@ const embed = new Discord.MessageEmbed()
 .setAuthor("Prefix [ D! ]","")
 .setDescription(` 
 **
-・┊welcome [change channel]
-・┊left [change channel]
+・┊welcome [welcome]
+・┊left [welcome]
 **
 **[ invite ]**
 **[ click here ](https://discord.com/api/oauth2/authorize?client_id=743869029638471802&permissions=8&scope=bot)** 
@@ -73,9 +73,9 @@ DarkMan.on("guildMemberAdd", member => {
   if (!channel) return;
   const joinembed = new Discord.MessageEmbed()
     .setTitle(``)
-    .setAuthor(`Welcome Bot`, `https://cdn.discordapp.com/avatars/828218881989935105/479953e51dadf4f38c5bc72c912193c5.webp?size=1024`)
+    .setAuthor(`Welcome to helpstaff`, `https://cdn.discordapp.com/avatars/828218881989935105/479953e51dadf4f38c5bc72c912193c5.webp?size=1024`)
     .setColor("RANDOM")
-    .setThumbnail(DarkMan)
+    .setThumbnail(darkman)
     .addField(
       "**name** : ",
       `${member}
